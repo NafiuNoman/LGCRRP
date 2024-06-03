@@ -1,0 +1,98 @@
+*******map api
+
+AIzaSyAfq-28NW7Ki1jpVwa273EAYs48DrbVvnc // for publish key
+
+
+<!--            android:value="AIzaSyA5x430TGExe-AKCRrPHUANKUwRO0K-Ugw"--> // debug key
+
+
+
+
+*******
+shared pref
+    await prefs.setInt("selectedSchemeId", id);
+
+prefs.getString("token")
+
+*****
+
+class by default public
+and to make private make class name like this " _YourClassName "
+
+Remember, Dart doesn't have access modifiers like public, protected, or private as some other languages do. Instead,
+it relies on naming conventions (like the underscore prefix) and library visibility to control access to classes and members.
+****
+
+*****
+Write Future<void> return type for a future method otherwise while calling that function you can not put await there.
+
+ Future<void> getUserContactList(){.....}
+
+********
+
+
+****
+To build floor generated class
+run this command on terminal-> flutter packages pub run build_runner build
+and to watch later (I did not understand this part , its written in documentation)-> flutter packages pub run build_runner watch
+I never use this and it works fine.
+********
+
+
+
+
+*****
+int color
+
+ Color(0xfff7f6fb)
+
+********
+****
+
+This is exif output for gps.....
+
+I/flutter ( 6558): [k]->GPS GPSLatitudeRef: N
+I/flutter ( 6558): [k]->GPS GPSLatitude: [23, 49, 3057/100]
+I/flutter ( 6558): [k]->GPS GPSLongitudeRef: E
+I/flutter ( 6558): [k]->GPS GPSLongitude: [90, 25, 181/20]
+
+to make real lat and lng from this we need to do some calculation..
+
+ex for this lat = GPSLatitude: [23, 49, 3057/100]
+
+23+(49/60)+( (3057/100)/3600 ) = 23.82515833
+
+same for longitude.
+
+
+*****
+
+****
+
+//region yourCommenthere
+
+yourMethodhere
+
+ //endregion
+
+***
+
+*****
+
+String-> double -> Int
+
+ String value = "100.00";
+
+  // Parse the string as a double
+  double doubleValue = double.parse(value);
+
+  // Get the integer part of the double value
+  int intValue = doubleValue.toInt();
+
+
+  ******
+
+  *****
+  for change appbar drawerColor
+        iconTheme: IconThemeData(color: Colors.white),
+*********
